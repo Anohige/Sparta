@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.map-container {
+    height: 600px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.leaflet-container {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.leaflet-map {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.leaflet-popup-content {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.leaflet-container {
+    touch-action: none;
+}
+
+.App {
+    padding: 20px;
+}
+
+.App section {
+    transition: transform 0.3s ease-in-out;
+}
+
+.App section:hover {
+    transform: scale(1.02);
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .map-container {
+        height: 400px;
+    }
+}
