@@ -7,8 +7,8 @@ import './styles.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Sparta Around the World</h1>
+    <div className="App spartan-background">
+      <h1>Sparta in different Languages</h1>
       <WordCloudComponent />
       <LanguageMap />s
       <SpartaMap />
@@ -16,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;  
